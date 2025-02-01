@@ -71,6 +71,3 @@ Projenin tahmin sonuçları, modelin doğruluğuna dayanmaktadır. Model, çeşi
 ## 📝 Lisans
 
 Bu proje, [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
-```
-
-Bu dosyayı `README.md` olarak kaydedebilir ve GitHub projenize ekleyebilirsiniz.
