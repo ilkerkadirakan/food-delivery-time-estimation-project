@@ -2,7 +2,7 @@
 
 # 📦 Teslimat Süresi Tahmin Uygulaması
 
-Bu proje, bir teslimat sisteminde, kurye, hava durumu, trafik durumu ve araç türü gibi faktörlere dayanarak teslimat süresini tahmin etmek için geliştirilmiş bir makine öğrenmesi modelini kullanmaktadır.
+Bu proje, bir kargo sisteminde, kurye, hava durumu, trafik durumu ve araç türü gibi faktörlere dayanarak teslimat süresini tahmin etmek için geliştirilmiş bir makine öğrenmesi modelini kullanmaktadır.
 
 ## 🚀 Başlangıç
 
