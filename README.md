@@ -1,5 +1,3 @@
-
-
 # 📦 Teslimat Süresi Tahmin Uygulaması
 
 Bu proje, bir kargo sisteminde, kurye, hava durumu, trafik durumu ve araç türü gibi faktörlere dayanarak teslimat süresini tahmin etmek için geliştirilmiş bir makine öğrenmesi modelini kullanmaktadır.
@@ -13,28 +11,28 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 Projenin çalışması için gereken Python kütüphanelerini yüklemek için:
 
 ```bash
-pip install -r requirements.txt
+pip install -r streamlit_app/requirements.txt
 ```
 
-### 2. Verinin Yüklenmesi ve Hazırlanması
+### 2. Model Eğitimi ve Veri Seti
 
-Projede kullanılan verileri yüklemek için `dataset.pkl` dosyasına ihtiyacınız olacak. Bu veri seti, kurye teslimatlarının özelliklerini içermektedir.
+Modelin nasıl eğitildiğini görmek için **food_delivery_estimation.ipynb** dosyasına göz atabilirsiiz. Bu dosya, modelin eğitim sürecini, veri seti ile yapılan ön işleme adımlarını ve modelin doğruluğunu açıklamaktadır. Kullanılan veri setini görmek için ise **Food_Delivery_Times**  dosyasına göz atabilirsiniz.
 
 ### 3. Modelin Yüklenmesi
 
-Proje, daha önce eğitilmiş bir model (`model.pkl`) kullanır. Modeli yüklemek için:
+Proje,  yukarıda bahsedilen dosyadaki eğitilmiş modeli (`model.pkl`) kullanır. Modeli yüklemek için:
 
 ```python
 import joblib
-model = joblib.load('model.pkl')
+model = joblib.load('streamlit_app/model.pkl')
 ```
 
 ### 4. Web Uygulaması (Streamlit)
 
-Bu proje, kullanıcıların çeşitli teslimat parametrelerine göre tahmin yapmalarını sağlayan bir web uygulaması (Streamlit) içerir. Uygulamayı başlatmak için:
+Proje kullanıcıların çeşitli teslimat parametrelerine göre tahmin yapmalarını sağlayan bir web uygulaması (Streamlit) barındırıyor. Uygulamayı başlatmak için:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app/food_delivery.py
 ```
 
 ### 5. Kullanıcı Girdileri
