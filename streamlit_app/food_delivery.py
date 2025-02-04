@@ -15,8 +15,8 @@ def handle_outliers(column):
 
 
 # Model ve veri yükleme
-model_path = "food-delivery-time-estimation-project/streamlit_app/model.pkl"
-data_path = "food-delivery-time-estimation-project/streamlit_app/dataset.pkl"
+model_path = "streamlit_app/model.pkl"
+data_path = "streamlit_app/dataset.pkl"
 
 model_pipeline = joblib.load(model_path)
 with open(data_path, "rb") as f:
